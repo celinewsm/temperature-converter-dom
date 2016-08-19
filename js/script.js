@@ -4,9 +4,7 @@ console.log('Hello, front end');
 var output = document.getElementById("output");
 var radios = document.getElementsByName("metric");
 var temp = document.getElementsByTagName("input")[0];
-
 var boxColor = document.getElementById("output");
-
 var inCelsius = 0;
 
 function convert() {
@@ -43,11 +41,10 @@ function changeColor() {
 }
 
 function clearAll(){
-
   boxColor.classList = []
   boxColor.classList.add("gray")
   temp.value = ""
-  output.textContent = "Insert temperature above."
+  output.textContent = "Pending input..."
 }
 
 document.addEventListener('DOMContentLoaded', function() {
