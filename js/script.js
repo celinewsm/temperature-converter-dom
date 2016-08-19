@@ -28,28 +28,27 @@ function convert() {
 }
 
 function changeColor() {
-    boxColor.classList = []
+    boxColor.classList = [];
       if (inCelsius <= 20 && temp.value !== "" ) {
       boxColor.classList.add("blue");
     }
     else if (inCelsius >= 30) {
-      boxColor.classList.add("red")
+      boxColor.classList.add("red");
     }
     else {
-      boxColor.classList.add("gray")
+      boxColor.classList.add("gray");
     }
 }
 
 function clearAll(){
-  boxColor.classList = []
-  boxColor.classList.add("gray")
-  temp.value = ""
-  output.textContent = "Pending input..."
+  boxColor.classList = [];
+  boxColor.classList.add("gray");
+  temp.value = "";
+  output.textContent = "Pending input...";
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM loaded");
-
 	document.getElementById("submit").addEventListener("click", function(){
 	  console.log("Submit button clicked!");
 	  convert();
